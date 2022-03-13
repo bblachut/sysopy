@@ -13,7 +13,7 @@ wcMainTable wc_createMainTable(size_t nEntries){
     return newTable;
 }
 
-void removeBlock(wcMainTable * array, int id){
+void wc_removeBlock(wcMainTable * array, int id){
     if (id >= array->size)
         return;
 
@@ -33,6 +33,7 @@ int wc_addBlock(wcMainTable*array, const char* path){
 
     array->data[id] = readFile(fp);
     fclose(fp);
+    remove("tmp.txt");
     return id;
 }
 

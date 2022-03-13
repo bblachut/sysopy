@@ -3,7 +3,7 @@ typedef struct{
     char ** data;
 }wcMainTable;
 wcMainTable wc_createMainTable(size_t nEntries);
-void removeBlock(wcMainTable * array, int id);
+void wc_removeBlock(wcMainTable * array, int id);
 int wc_addBlock(wcMainTable*array, const char* path);
 
 
