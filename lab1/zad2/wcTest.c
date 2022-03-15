@@ -39,9 +39,10 @@ int main(){
             timer_start();
             wc_removeBlock(array, id);
             timer_check();
+        } else if (strcmp(input, "q") == 0) {
+            return 0;
         }else {
             printf("Wrong command");
-            return -1;
         }
     }
 }

@@ -1,11 +1,12 @@
-CC         := gcc -c -std=gnu11 -Wall -m64
+CC         := gcc -std=gnu11 -Wall
 
 all:clean static
 
 static:
 	$(CC) -c wcLib.c
 	ar rcs libwcLib.a wcLib.o
-	$(CC) wcTest.c -o wcTest -L. -lwcLib
+	$(CC) -c wcTest.c
+	$(CC) wcTest.c -o wcTest libwcLib.a
 
 
 shared:
