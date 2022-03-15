@@ -4,7 +4,7 @@
 #include <sys/times.h>
 #include <unistd.h>
 
-#include "wcLib.h"
+#include "../zad1/wcLib.h"
 
 const char* read_command_arguments(void);
 
