@@ -18,13 +18,14 @@ void wc_removeBlock(wcMainTable * array, int id){
         return;
 
     free(array->data[id]);
+    array->data[id] = NULL;
 }
 
 int wc_addBlock(wcMainTable*array, const char* path){
     const int id = findFirstFreeID(array);
 
     FILE* fp;
-    char* tmpName = "/tmp.txt";
+    char* tmpName = "./tmp.txt";
     fp = fopen(tmpName, "w+");
     const size_t additional_commnad_buffer_size = 9;
     char* command = calloc(sizeof(*command), additional_commnad_buffer_size + strlen(path) + strlen(tmpName));

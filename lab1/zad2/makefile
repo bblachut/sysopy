@@ -9,15 +9,9 @@ static:
 	$(CC) wcTest.c -o wcTest libwcLib.a
 
 
-shared:
-	$(CC) -c -fPIC wcLib.c
-	$(CC) -shared -fPIC -o libwcLib.so wcLib.o
-	$(CC) wcTest.c -o wcTest -L. -lwcLib
-
 clean:
 	rm -f *.o
 	rm -f *.a
 	rm -f *.so
-	rm -f main
-	rm -f *.txt
+	rm -f wcTest
 

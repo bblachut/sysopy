@@ -1,0 +1,48 @@
+Tworzenie tablicy:
+rozmiar 1
+Time Real: 0.000000
+Time User: 0.000000
+Time Sys: 0.000000
+rozmiar 10
+Time Real: 0.000000
+Time User: 0.000000
+Time Sys: 0.000000
+rozmiar 100
+Time Real: 0.000000
+Time User: 0.000000
+Time Sys: 0.000000
+
+Dodawanie plików:
+1 duży: wc_files ./files/big_1.txt
+Time Real: 0.010000
+Time User: 0.000000
+Time Sys: 0.000000
+5 dużych wc_files ./files/big_1.txt ./files/big_1.txt ./files/big_1.txt ./files/big_3.txt ./files/big_2.txt
+Time Real: 0.070000
+Time User: 0.000000
+Time Sys: 0.000000
+10 dużych wc_files ./files/big_1.txt ./files/big_1.txt ./files/big_1.txt ./files/big_3.txt ./files/big_2.txt ./files/big_1.txt ./files/big_1.txt ./files/big_1.txt ./files/big_3.txt ./files/big_2.txt
+Time Real: 0.090000
+Time User: 0.000000
+Time Sys: 0.000000
+5 średnich wc_files ./files/medium_1.txt ./files/medium_1.txt ./files/medium_1.txt ./files/medium_3.txt ./files/medium_2.txt
+Time Real: 0.070000
+Time User: 0.000000
+Time Sys: 0.000000
+10 średnich wc_files ./files/medium_1.txt ./files/medium_1.txt ./files/medium_1.txt ./files/medium_3.txt ./files/medium_2.txt wc_files ./files/medium_1.txt /files/medium_1.txt ./files/medium_1.txt ./files/medium_3.txt ./files/medium_2.txt
+Time Real: 0.070000
+Time User: 0.000000
+Time Sys: 0.010000
+1 mały wc_files ./files/small_1.txt
+Time Real: 0.020000
+Time User: 0.000000
+Time Sys: 0.000000
+10 małych wc_files ./files/small_1.txt ./files/small_1.txt ./files/small_1.txt ./files/small_2.txt ./files/small_3.txt ./files/small_1.txt ./files/small_2.txt ./files/small_1.txt ./files/small_2.txt ./files/small_3.txt
+Time Real: 0.100000
+Time User: 0.000000
+Time Sys: 0.010000
+
+usuwanie bloku
+Time Real: 0.000000
+Time User: 0.000000
+Time Sys: 0.000000
