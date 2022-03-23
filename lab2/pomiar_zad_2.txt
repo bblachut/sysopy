@@ -1,0 +1,9 @@
+with fread
+Time Real: 0.000000
+Time User: 0.000000
+Time Sys: 0.000000
+
+with read
+Time Real: 0.010000
+Time User: 0.000000
+Time Sys: 0.000000
