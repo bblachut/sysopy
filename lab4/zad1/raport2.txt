@@ -1,0 +1,57 @@
+########EXEC########
+
+Potomek dziedziczy ustawienia dla wszytkich testowanych funkcji
+w pending sygnał też jest widoczny w potomku
+
+-------Testing ignore-------
+Parent raising signal...
+Parent ignored signal
+Child raising signal...
+Child ignored signal
+
+-------Testing mask-------
+10 Blocked
+Raising in parent
+Signal masked, nothing happened in parent
+Unmasking signal and handling
+Received signal 10. PID: 381, PPID: 363
+10 Not blocked
+Raising in child
+Signal masked, nothing happened in child
+Unmasking signal and handling
+Received signal 10. PID: 381, PPID: 363
+
+-------Testing pending-------
+Pending in parent
+Pending in parent
+
+#######FORK########
+Potomek dziedziczy ustawienia dla handler, mask i ignore.
+W przypadku pending potomerk nie widzi syganłu
+
+-------Testing ignore-------
+Parent raising signal...
+Parent ignored signal
+Child raising signal...
+Child ignored signal
+
+-------Testing handler-------
+Parent raising signal...
+Received signal 10. PID: 385, PPID: 363
+Child raising signal...
+Received signal 10. PID: 386, PPID: 385
+
+-------Testing mask-------
+10 Blocked
+Raising in child
+Signal masked, nothing happened in child
+Unmasking signal and handling
+Received signal 10. PID: 388, PPID: 387
+Raising in parent
+Signal masked, nothing happened in parent
+Unmasking signal and handling
+Received signal 10. PID: 387, PPID: 363
+
+-------Testing pending-------
+Pending in parent
+Not Pending in child
