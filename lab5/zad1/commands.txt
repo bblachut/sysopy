@@ -1,0 +1,5 @@
+commands0 = ls | grep m
+commands1 = wc -l
+commands2 = cat /etc/passwd | grep 11
+commands0
+commands2 | commands1
